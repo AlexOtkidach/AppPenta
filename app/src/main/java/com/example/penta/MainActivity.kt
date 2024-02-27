@@ -21,5 +21,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, InfoActivity::class.java)
             startActivity(intent)
         }
+
+        // Обработчик нажатия на кнопку Чат
+        findViewById<View>(R.id.btnChat).setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
