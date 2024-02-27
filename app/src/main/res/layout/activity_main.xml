@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Заголовок "ПЕНТА" -->
+<TextView
+android:id="@+id/textViewTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="ПЕНТА"
+android:textSize="24sp"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="50dp"/>
+
+    <!-- Кнопка Заказ -->
+<Button
+android:id="@+id/btnOrder"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+    android:text="Заказ"
+    android:layout_below="@id/textViewTitle"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:background="@color/main_button"/>
+
+    <!-- Кнопка Инфо -->
+<Button
+android:id="@+id/btnInfo"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+    android:text="Инфо"
+    android:layout_below="@id/btnOrder"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="@color/main_button"/>
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Чат"
+        android:layout_below="@id/btnInfo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="@color/main_button"/>
+
+    </RelativeLayout>

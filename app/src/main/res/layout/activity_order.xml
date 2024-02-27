@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/textViewCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите заказчика:"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCompanies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCustomer"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите вид работ:"
+        android:layout_below="@id/spinnerCompanies"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerWorks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWork"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите дату работы:"
+        android:layout_below="@id/spinnerWorks"
+        android:layout_marginTop="16dp"/>
+
+    <DatePicker
+        android:id="@+id/datePickerOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDate"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewCarModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Марка автомобиля:"
+        android:layout_below="@id/datePickerOrder"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCarModel"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить заказ"
+        android:layout_below="@id/etCarModel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
