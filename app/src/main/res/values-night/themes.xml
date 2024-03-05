@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Penta" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="MyTheme" parent="Theme.Penta">
+        <item name="android:windowBackground">@color/my_background_color</item>
     </style>
     <!-- Для темной темы ToolBar-->
     <style name="ToolbarStyle.Dark" parent="Widget.MaterialComponents.Toolbar.Primary">
