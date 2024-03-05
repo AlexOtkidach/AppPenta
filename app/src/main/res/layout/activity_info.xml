@@ -1,6 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ProductInfoActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Добавляем Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <!-- Заголовок "Информация по продуктам" -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Информация по продуктам"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Контейнер для кнопок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <!-- Добавляем кнопки для перехода к дополнительной информации -->
+        <Button
+            android:id="@+id/buttonInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Полиуретановая пленка"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Керамическое покрытие"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonInfo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Полировальные системы"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonInfo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Защита салона автомобиля"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonInfo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Антидождь и защита ткани"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</RelativeLayout>

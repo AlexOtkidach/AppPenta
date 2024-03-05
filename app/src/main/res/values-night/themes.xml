@@ -1,7 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Penta" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <!-- Для темной темы ToolBar-->
+    <style name="ToolbarStyle.Dark" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 </resources>

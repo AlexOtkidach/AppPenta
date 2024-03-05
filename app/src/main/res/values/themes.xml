@@ -1,8 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Penta" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Для светлой темы ToolBar-->
+    <style name="ToolbarStyle.Light" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:textColorPrimary">@android:color/black</item>
     </style>
 
     <style name="Theme.Penta" parent="Base.Theme.Penta" />

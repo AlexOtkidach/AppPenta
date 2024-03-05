@@ -3,6 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Цыета для кнопок Главного меню -->
+    <!-- Цвета Главного меню -->
     <color name="main_button">#B74A4A</color>
+    <color name="main_toolbar_color">#84A98C</color>
+    <color name="salad_color">#CAD2C5</color>
+    <color name="green_button">#52796F</color>
+
+    <!-- Цвета страницы Заказ -->
+    <color name="colorPrimary">#B74A4A</color>
+    <color name="colorPrimaryDark">#84A98C</color>
+    <color name="colorAccent">#CAD2C5</color>
 </resources>

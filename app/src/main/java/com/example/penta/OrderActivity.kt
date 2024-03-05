@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.Spinner
+import androidx.appcompat.widget.Toolbar
 
 
 class OrderActivity : AppCompatActivity() {
@@ -20,14 +22,23 @@ class OrderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order)
 
+        // Находим тулбар по его идентификатору
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+
+        // Устанавливаем тулбар как панель действий для этой активности
+        setSupportActionBar(toolbar)
+
+        // Показываем кнопку "назад" на тулбаре
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         spinnerCompanies = findViewById(R.id.spinnerCompanies)
         spinnerWorks = findViewById(R.id.spinnerWorks)
         btnConfirmOrder = findViewById(R.id.btnConfirmOrder)
 
         etCarModel = findViewById(R.id.etCarModel)
 
-        val companies = listOf("Company A", "Company B", "Company C", "Company D")
-        val works = listOf("Work A", "Work B", "Work C", "Work D")
+        val companies = listOf("Major Сокольники", "Major Новая Рига", "Major 47км", "Major Магистральная")
+        val works = listOf("Полировка Новый", "Полировка Б/У", "Оклейка Полная", "Оклейка Передняя часть")
 
         spinnerCompanies.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, companies)
         spinnerWorks.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, works)
@@ -36,15 +47,13 @@ class OrderActivity : AppCompatActivity() {
             val customer = spinnerCompanies.selectedItem.toString()
             val work = spinnerWorks.selectedItem.toString()
             // Получение даты работы
-            //val date = datePickerOrder.date
+            val datePickerOrder: DatePicker = findViewById(R.id.datePickerOrder)
             val carModel = etCarModel.text.toString() // значение из EditText
 
             val orderText = "Заказчик: $customer\nРабота: $work\nДата: Текущая дата\nМарка автомобиля: $carModel"
             sendEmail(orderText)
 
             clearFields()
-
-
         }
     }
 

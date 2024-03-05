@@ -1,3 +1,12 @@
 <resources>
+    <!-- Названия для кнопок Главного меню -->
     <string name="app_name">Penta +</string>
+    <string name="chat">Чат</string>
+    <string name="info">Инфо</string>
+    <string name="order">Заказ</string>
+
+    <!-- Названия для экрана ЧАТ -->
+
+    <string name="in_developing">В РАЗРАБОТКЕ</string>
+
 </resources>
