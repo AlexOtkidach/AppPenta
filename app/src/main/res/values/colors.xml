@@ -5,13 +5,25 @@
 
     <!-- Цвета Главного меню -->
     <color name="main_button">#B74A4A</color>
-    <color name="main_toolbar_color">#84A98C</color>
+    <color name="main_toolbar_color">#673AB7</color>
     <color name="salad_color">#CAD2C5</color>
-    <color name="green_button">#52796F</color>
-    <color name="my_background_color">#52796F</color>
+    <color name="green_button">#673AB7</color>
+    <color name="my_background_color">#FFFFF2</color>
+    <color name="violet_lite_button_new_design">#655384</color>
+
 
     <!-- Цвета страницы Заказ -->
     <color name="colorPrimary">#B74A4A</color>
-    <color name="colorPrimaryDark">#84A98C</color>
+    <color name="colorPrimaryDark">#8A47DE</color>
     <color name="colorAccent">#CAD2C5</color>
+
+    <color name="color_button_chat">#572FDD</color>572FDD
+
+    <!-- Цвета Для кнопки в Main -->
+    <color name="button_normal_color">#FF4081</color>
+    <color name="button_pressed_color">#F50057</color>
+    <color name="button_focused_color">#FF80AB</color>
+    <color name="button_selector_color">#E91E63</color>
+    <color name="drawable_tint_color">#FFFFFF</color>
+
 </resources>

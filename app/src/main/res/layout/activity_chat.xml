@@ -16,6 +16,7 @@
     <!-- Поле ввода сообщения -->
 
     <!-- Кнопка для отправки сообщения -->
+
     <EditText
         android:id="@+id/editTextMessage"
         android:layout_width="0dp"

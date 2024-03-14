@@ -1,10 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Для темной темы ToolBar-->
+    <style name="ToolbarStyle.Light" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
     <style name="MyTheme" parent="Theme.Penta">
         <item name="android:windowBackground">@color/my_background_color</item>
     </style>
-    <!-- Для темной темы ToolBar-->
-    <style name="ToolbarStyle.Dark" parent="Widget.MaterialComponents.Toolbar.Primary">
-        <item name="android:textColorPrimary">@android:color/white</item>
-    </style>
+
+    <style name="Theme.Penta" parent="Base.Theme.Penta" />
 </resources>

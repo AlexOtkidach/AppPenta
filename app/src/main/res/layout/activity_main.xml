@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/salad_color"
+    android:background="@drawable/line_background"
     tools:context=".MainActivity">
 
-    <!-- Верхняя часть страницы с лого -->
+    <!-- Верхний фон -->
     <View
-        android:id="@+id/viewTop"
+        android:id="@+id/viewTopBackground"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/main_toolbar_color"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="300dp"
+        android:background="@drawable/line_background2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/guideline" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Guideline для разделения на 1/4 -->
     <androidx.constraintlayout.widget.Guideline
@@ -29,9 +28,9 @@
     <!-- Картинка в центре -->
     <ImageView
         android:id="@+id/imageViewCenter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_penta_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/penta_logo_pink"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/guideline"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,55 +39,57 @@
         android:layout_marginBottom="50dp"/>
 
     <Button
-    android:id="@+id/btnOrder"
-    style="@style/GreenButtonStyle"
-    android:layout_width="0dp"
-    android:layout_height="100dp"
-    android:layout_marginStart="32dp"
-    android:layout_marginTop="48dp"
-    android:layout_marginEnd="32dp"
-    android:paddingStart="20dp"
-    android:drawableStart="@drawable/ic_call"
-    android:drawablePadding="1dp"
-    android:text="@string/order"
-    android:textSize="36sp"
-    android:gravity="center"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/guideline" />
+        android:id="@+id/btnOrder"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="209dp"
+        android:background="@drawable/round_button_selector"
+        android:backgroundTint="@android:color/holo_purple"
+        android:drawablePadding="1dp"
+        android:drawableTint="@color/drawable_tint_color"
+        android:gravity="center"
+        android:text="@string/order"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnInfo"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:text="@string/info"
-        app:layout_constraintTop_toBottomOf="@id/btnOrder"
-        app:layout_constraintStart_toStartOf="@id/btnOrder"
-        app:layout_constraintEnd_toEndOf="@id/btnOrder"
-        android:layout_marginTop="48dp"
-        android:paddingStart="20dp"
-        style="@style/GreenButtonStyle"
-        android:drawableStart="@drawable/ic_info_with_circle"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/round_button_selector"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:drawablePadding="1dp"
+        android:drawableTint="@color/drawable_tint_color"
+        android:gravity="center"
+        android:text="@string/info"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="36sp"
-    android:gravity="center"
-    />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnChat"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_width="149dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="528dp"
+        android:background="@drawable/round_button_selector"
+        android:backgroundTint="@color/color_button_chat"
+        android:drawablePadding="1dp"
+        android:drawableTint="@color/drawable_tint_color"
+        android:gravity="center"
         android:text="@string/chat"
-        app:layout_constraintTop_toBottomOf="@id/btnInfo"
-        app:layout_constraintStart_toStartOf="@id/btnInfo"
-        app:layout_constraintEnd_toEndOf="@id/btnInfo"
-        android:layout_marginTop="48dp"
-        android:paddingStart="20dp"
-        style="@style/GreenButtonStyle"
-        android:drawableStart="@drawable/nicubunu_callout_round_right"
-        android:drawablePadding="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="36sp"
-    android:gravity="center"
-    />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

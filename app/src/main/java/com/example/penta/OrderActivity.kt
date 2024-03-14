@@ -60,7 +60,7 @@ class OrderActivity : AppCompatActivity() {
     private fun sendEmail(orderText: String) {
         val emailIntent = Intent(Intent.ACTION_SEND)
         emailIntent.type = "plain/text"
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("example@example.com"))
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("penta.co@yandex.ru")) // Здесь указываем адрес получателя
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Новый заказ")
         emailIntent.putExtra(Intent.EXTRA_TEXT, orderText)
         startActivity(Intent.createChooser(emailIntent, "Отправить заказ"))

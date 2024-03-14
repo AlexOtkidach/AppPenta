@@ -24,6 +24,36 @@
         </activity>
 
         <activity
+            android:name=".ProductInfo1Activity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".ProductInfo2Activity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".ProductInfo3Activity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".ProductInfo4Activity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".ProductInfo5Activity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
             android:name=".OrderActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
