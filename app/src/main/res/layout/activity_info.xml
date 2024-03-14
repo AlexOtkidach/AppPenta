@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/line_1">
+    android:background="@drawable/line_1"
+    android:gravity="center_horizontal">
 
     <!-- Заголовок "Информация по продуктам" -->
     <TextView
@@ -11,98 +11,86 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Услуги"
+        android:textColor="#1B1B1E"
         android:textSize="48sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
 
     <!-- Контейнер для кнопок -->
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:orientation="horizontal"
         android:layout_below="@id/textViewTitle"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="16dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:columnOrderPreserved="false">
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:rowCount="5"
-            android:orientation="horizontal"
-            android:layout_below="@id/textViewTitle"
+        <!-- Добавляем кнопки для перехода к дополнительной информации -->
+
+        <Button
+            android:id="@+id/buttonInfo1"
+            style="@style/infoButtonStyle"
+            android:layout_width="135dp"
+            android:layout_height="99dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="16dp"
-            android:gravity="center"
-            android:columnOrderPreserved="false">
+            android:text="Полиуретановая пленка"
+            android:textAllCaps="false"
+            android:layout_gravity="center" />
 
-            <!-- Добавляем кнопки для перехода к дополнительной информации -->
+        <Button
+            android:id="@+id/buttonInfo2"
+            style="@style/infoButtonStyle"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:text="Керамическое покрытие"
+            android:textAllCaps="false"
+            android:layout_width="158dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="21dp"
+            android:layout_alignTop="@id/buttonInfo1"
+            android:layout_gravity="center" />
 
-            <Button
-                android:id="@+id/buttonInfo1"
-                style="@style/GreenButtonStyle"
-                android:layout_width="158dp"
-                android:layout_height="99dp"
-                android:layout_row="0"
-                android:layout_rowSpan="1"
-                android:layout_column="0"
-                android:layout_columnSpan="1"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="8dp"
-                android:text="Полиуретановая пленка" />
+        <Button
+            android:id="@+id/buttonInfo3"
+            style="@style/infoButtonStyle"
+            android:layout_width="133dp"
+            android:layout_height="99dp"
+            android:text="Полировальные системы"
+            android:textAllCaps="false"
+            android:layout_gravity="center" />
 
-            <Button
-                android:id="@+id/buttonInfo2"
-                style="@style/GreenButtonStyle"
-                android:layout_columnSpan="1"
-                android:layout_rowSpan="1"
-                android:text="Керамическое покрытие"
-                android:layout_width="158dp"
-                android:layout_height="158dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="21dp" />
+        <Button
+            android:id="@+id/buttonInfo4"
+            style="@style/infoButtonStyle"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="2"
+            android:text="Защита салона автомобиля"
+            android:textAllCaps="false"
+            android:layout_width="158dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginStart="21dp"
+            android:layout_gravity="center" />
 
-            <Button
-                android:id="@+id/buttonInfo3"
-                style="@style/GreenButtonStyle"
-                android:layout_columnSpan="1"
-                android:layout_rowSpan="1"
-                android:text="Полировальные системы"
-                android:layout_width="158dp"
-                android:layout_height="99dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="15dp" />
+        <Button
+            android:id="@+id/buttonInfo5"
+            style="@style/infoButtonStyle"
+            android:layout_width="133dp"
+            android:layout_height="99dp"
+            android:text="Антидождь и защита ткани"
+            android:textAllCaps="false"
+            android:layout_gravity="center" />
 
-            <Button
-                android:id="@+id/buttonInfo4"
-                style="@style/GreenButtonStyle"
-                android:layout_columnSpan="1"
-                android:layout_rowSpan="2"
-                android:text="Защита салона автомобиля"
-                android:layout_width="158dp"
-                android:layout_height="158dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="21dp" />
-
-            <Button
-                android:id="@+id/buttonInfo5"
-                style="@style/GreenButtonStyle"
-                android:layout_columnSpan="1"
-                android:layout_rowSpan="2"
-                android:text="Антидождь и защита ткани"
-                android:layout_width="158dp"
-                android:layout_height="99dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="21dp" />
-
-        </GridLayout>
-    </LinearLayout>
+    </GridLayout>
 
     <!-- Добавляем изображение penta_logo_pink -->
     <ImageView
@@ -115,5 +103,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="66dp"
         android:src="@drawable/penta_logo_pink" />
+
 
 </RelativeLayout>
