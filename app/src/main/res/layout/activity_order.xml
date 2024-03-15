@@ -5,88 +5,114 @@
     android:background="@drawable/line_order_beckground"
     tools:context=".OrderActivity">
 
-    <!-- Content -->
-    <TextView
-        android:id="@+id/textViewCustomer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Выберите заказчика:"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
-
-    <Spinner
-        android:id="@+id/spinnerCompanies"
+    <RelativeLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewCustomer"
-        android:layout_alignStart="@id/textViewCustomer"
-        android:layout_alignEnd="@id/textViewCustomer"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="200dp"
+        android:layout_centerInParent="true">
 
-    <TextView
-        android:id="@+id/textViewWork"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Выберите вид работ:"
-        android:layout_below="@id/spinnerCompanies"
-        android:layout_alignStart="@id/spinnerCompanies"
-        android:layout_marginTop="16dp"/>
+        <!-- Кнопка выбора Заказа -->
+        <Button
+            android:id="@+id/btnSelectCompany"
+            android:layout_width="279dp"
+            android:layout_height="54dp"
+            android:text="Выбирите себя"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/polygon_1"
+            android:paddingRight="16dp"
+            android:background="@drawable/button_purple_rounded"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"/>
 
-    <Spinner
-        android:id="@+id/spinnerWorks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewWork"
-        android:layout_alignStart="@id/textViewWork"
-        android:layout_alignEnd="@id/textViewWork"
-        android:layout_marginTop="8dp"/>
+        <!-- Кнопка выбора Работ -->
+        <Button
+            android:id="@+id/btnSelectWork"
+            android:layout_width="279dp"
+            android:layout_height="54dp"
+            android:text="Вид работ"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/polygon_1"
+            android:paddingRight="16dp"
+            android:background="@drawable/button_purple_rounded"
+            android:layout_below="@id/btnSelectCompany"
+            android:layout_alignStart="@id/btnSelectCompany"
+            android:layout_alignEnd="@id/btnSelectCompany"
+            android:layout_marginTop="24dp"/>
 
-    <TextView
-        android:id="@+id/textViewDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Выберите дату работы:"
-        android:layout_below="@id/spinnerWorks"
-        android:layout_alignStart="@id/spinnerWorks"
-        android:layout_marginTop="16dp"/>
+        <!-- Кнопка выбора Даты -->
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="279dp"
+            android:layout_height="54dp"
+            android:text="Дата работ"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/polygon_1"
+            android:paddingRight="16dp"
+            android:background="@drawable/button_purple_rounded"
+            android:layout_below="@id/btnSelectWork"
+            android:layout_alignStart="@id/btnSelectWork"
+            android:layout_alignEnd="@id/btnSelectWork"
+            android:layout_marginTop="24dp"/>
 
-    <Spinner
-        android:id="@+id/spinnerDates"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewDate"
-        android:layout_alignStart="@id/textViewDate"
-        android:layout_alignEnd="@id/textViewDate"
-        android:layout_marginTop="8dp"/>
+        <!-- Кнопка выбора Марки-->
+        <Button
+            android:id="@+id/btnSelectCarModel"
+            android:layout_width="279dp"
+            android:layout_height="54dp"
+            android:text="Марка автомобиля"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/polygon_1"
+            android:paddingRight="16dp"
+            android:background="@drawable/button_purple_rounded"
+            android:layout_below="@id/btnSelectDate"
+            android:layout_alignStart="@id/btnSelectDate"
+            android:layout_alignEnd="@id/btnSelectDate"
+            android:layout_marginTop="24dp"/>
 
-    <TextView
-        android:id="@+id/textViewCarModel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Марка автомобиля:"
-        android:layout_below="@id/spinnerDates"
-        android:layout_alignStart="@id/spinnerDates"
-        android:layout_marginTop="16dp"/>
+        <!-- EditText для ввода марки автомобиля -->
+        <EditText
+            android:id="@+id/etCarModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSelectCarModel"
+            android:layout_alignStart="@id/btnSelectCarModel"
+            android:layout_alignEnd="@id/btnSelectCarModel"
+            android:layout_marginTop="8dp"/>
 
-    <EditText
-        android:id="@+id/etCarModel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewCarModel"
-        android:layout_alignStart="@id/textViewCarModel"
-        android:layout_alignEnd="@id/textViewCarModel"
-        android:layout_marginTop="8dp"/>
+        <!-- Кнопка подтверждения заказа -->
+        <Button
+            android:id="@+id/btnConfirmOrder"
+            android:layout_width="279dp"
+            android:layout_height="54dp"
+            android:text="Подтвердить заказ"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:background="@drawable/button_yellow_rounded"
+            android:layout_below="@id/etCarModel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
-    <Button
-        android:id="@+id/btnConfirmOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Подтвердить заказ"
-        android:layout_below="@id/etCarModel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Penta Logo -->
+        <ImageView
+            android:id="@+id/pentaLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/penta_logo_pink"
+            android:layout_below="@id/btnConfirmOrder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
-
-

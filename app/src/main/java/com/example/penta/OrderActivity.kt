@@ -22,20 +22,13 @@ class OrderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order)
 
-        // Находим тулбар по его идентификатору
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-
-        // Устанавливаем тулбар как панель действий для этой активности
-        setSupportActionBar(toolbar)
-
         // Показываем кнопку "назад" на тулбаре
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        spinnerCompanies = findViewById(R.id.spinnerCompanies)
-        spinnerWorks = findViewById(R.id.spinnerWorks)
+
         btnConfirmOrder = findViewById(R.id.btnConfirmOrder)
 
-        etCarModel = findViewById(R.id.etCarModel)
+
 
         val companies = listOf("Major Сокольники", "Major Новая Рига", "Major 47км", "Major Магистральная")
         val works = listOf("Полировка Новый", "Полировка Б/У", "Оклейка Полная", "Оклейка Передняя часть")
@@ -47,7 +40,6 @@ class OrderActivity : AppCompatActivity() {
             val customer = spinnerCompanies.selectedItem.toString()
             val work = spinnerWorks.selectedItem.toString()
             // Получение даты работы
-            val datePickerOrder: DatePicker = findViewById(R.id.datePickerOrder)
             val carModel = etCarModel.text.toString() // значение из EditText
 
             val orderText = "Заказчик: $customer\nРабота: $work\nДата: Текущая дата\nМарка автомобиля: $carModel"
