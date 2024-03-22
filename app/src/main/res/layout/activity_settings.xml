@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line_background"
+    tools:context=".SettingsActivity">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="65dp" />
+
+    <!-- Галочка для согласия на обработку персональных данных -->
+    <CheckBox
+        android:id="@+id/checkBoxPersonalData"
+        android:layout_width="313dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:text="Согласие на обработку данных (ФЗ 152)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <!-- Галочка для разрешения на пуш уведомления -->
+    <CheckBox
+        android:id="@+id/checkBoxPushNotifications"
+        android:layout_width="227dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Разрешить пуш уведомления"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxPersonalData" />
+
+    <!-- Кнопка Поделиться приложением  -->
+    <Button
+        android:id="@+id/btnShareApp"
+        android:layout_width="230dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@android:drawable/ic_menu_share"
+        android:drawablePadding="8dp"
+        android:onClick="shareApp"
+        android:text="Поделиться приложением"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxPushNotifications" />
+
+    <Button
+        android:id="@+id/btnSupport"
+        android:layout_width="258dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@android:drawable/ic_menu_call"
+        android:onClick="callSupport"
+        android:text="Обратная связь и поддержка"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnShareApp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

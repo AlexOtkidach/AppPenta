@@ -1,6 +1,7 @@
 package com.example.penta
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -22,9 +23,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Обработчик нажатия на кнопку Чат
+        // Обработчик нажатия на кнопку Чат (WhatsApp)
         findViewById<View>(R.id.btnChat).setOnClickListener {
-            val intent = Intent(this, ChatActivity::class.java)
+            // Вместо "номер_телефона" укажите номер телефона контакта в формате, принятом WhatsApp (например, "+7 123 456-78-90")
+            val phoneNumber = "+7 988 878-14-39"
+            val url = "https://wa.me/$phoneNumber"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
+        // Обработчик нажатия на кнопку Настройки
+        findViewById<View>(R.id.btnSettings).setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
     }

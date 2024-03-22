@@ -13,7 +13,7 @@
 
     <!-- Добавляем стиль для кнопок -->
     <style name="infoButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/button_background</item>
+        <item name="android:background">@drawable/button_purple_rounded</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
 

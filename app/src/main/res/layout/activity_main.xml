@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -42,8 +43,8 @@
         android:id="@+id/btnOrder"
         android:layout_width="206dp"
         android:layout_height="206dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="209dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="208dp"
         android:background="@drawable/round_button_selector"
         android:backgroundTint="@android:color/holo_purple"
         android:drawablePadding="1dp"
@@ -60,8 +61,8 @@
         android:id="@+id/btnInfo"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="412dp"
         android:background="@drawable/round_button_selector"
         android:backgroundTint="@color/colorPrimaryDark"
         android:drawablePadding="1dp"
@@ -91,5 +92,18 @@
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Кнопка перехода в настройки -->
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Настройки"
+        android:textColor="#757575"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
