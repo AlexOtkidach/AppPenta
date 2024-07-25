@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         // Обработчик нажатия на кнопку Чат (WhatsApp)
         findViewById<View>(R.id.btnChat).setOnClickListener {
             // Вместо "номер_телефона" укажите номер телефона контакта в формате, принятом WhatsApp (например, "+7 123 456-78-90")
-            val phoneNumber = "+7 988 878-14-39"
+            val phoneNumber = "+7 993 913-45-30"
             val url = "https://wa.me/$phoneNumber"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)

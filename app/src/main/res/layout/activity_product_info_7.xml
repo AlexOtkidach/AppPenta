@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="193dp"
+        android:layout_height="276dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/bear_logo" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена в прайсе"
+        android:textColor="@color/teal_700"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/etSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ЗП мастеру"
+        android:inputType="numberDecimal"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/etMaterialCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Стоимость материала"
+        android:inputType="numberDecimal"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ПОГНАЛИ"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_background" />
+
+    <TextView
+        android:id="@+id/tvProfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Прибыль: "
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        android:visibility="gone"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvMarginPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Маржинальность: "
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

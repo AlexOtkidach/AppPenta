@@ -45,8 +45,7 @@ class SettingsActivity : AppCompatActivity() {
 
     // Функция для обработки нажатия на кнопку "Поделиться приложением"
     fun shareApp(view: View) {
-        val appPackageName = packageName
-        val appMarketLink = "https://play.google.com/store/apps/details?id=$appPackageName"
+        val appMarketLink = "https://apps.rustore.ru/app/com.example.penta"
 
         val intent = Intent(Intent.ACTION_SEND)
         intent.type = "text/plain"
