@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@color/white">
+    android:background="@drawable/backrauound_for_bear">
 
     <ImageView
         android:id="@+id/imageView"
@@ -48,7 +48,9 @@
         android:text="ПОГНАЛИ"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        android:background="@drawable/button_background" />
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:background="@drawable/button_bakground_for_bear" />
 
     <TextView
         android:id="@+id/tvProfit"

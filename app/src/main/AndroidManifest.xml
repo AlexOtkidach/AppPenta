@@ -59,6 +59,17 @@
         </activity>
 
         <activity
+            android:name=".BearCalculate"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".PhotoGalleryActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
             android:name=".OrderActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity">

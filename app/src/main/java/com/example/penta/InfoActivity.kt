@@ -16,6 +16,8 @@ class InfoActivity : AppCompatActivity() {
         val buttonInfo3 = findViewById<Button>(R.id.buttonInfo3)
         val buttonInfo4 = findViewById<Button>(R.id.buttonInfo4)
         val buttonInfo5 = findViewById<Button>(R.id.buttonInfo5)
+        val buttonInfo6 = findViewById<Button>(R.id.buttonInfo6)
+        val buttonInfo7 = findViewById<Button>(R.id.buttonInfo7)
 
         buttonInfo1.setOnClickListener {
             startActivityForProduct(1)
@@ -36,6 +38,12 @@ class InfoActivity : AppCompatActivity() {
         buttonInfo5.setOnClickListener {
             startActivityForProduct(5)
         }
+        buttonInfo6.setOnClickListener {
+            startActivityForProduct(6)
+        }
+        buttonInfo7.setOnClickListener {
+            startActivityForProduct(7)
+        }
     }
 
     private fun startActivityForProduct(productNumber: Int) {
@@ -45,6 +53,8 @@ class InfoActivity : AppCompatActivity() {
             3 -> Intent(this, ProductInfo3Activity::class.java)
             4 -> Intent(this, ProductInfo4Activity::class.java)
             5 -> Intent(this, ProductInfo5Activity::class.java)
+            6 -> Intent(this, PhotoGalleryActivity::class.java)
+            7 -> Intent(this, BearCalculate::class.java)
             else -> throw IllegalArgumentException("Invalid product number: $productNumber")
         }
         intent.putExtra("product_number", productNumber)
@@ -61,6 +71,6 @@ class ProductInfoActivity : AppCompatActivity() {
         // Получение номера продукта из интента
         intent.getIntExtra("product_number", 0)
 
-        // Здесь можно произвести настройку отображения информации о продукте в зависимости от его номера
+        // Здесь можно будет позже произвести настройку отображения информации о продукте в зависимости от его номера
     }
 }

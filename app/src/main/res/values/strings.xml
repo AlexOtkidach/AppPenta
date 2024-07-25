@@ -5,8 +5,12 @@
     <string name="info">Инфо</string>
     <string name="order">Заказ</string>
 
-    <!-- Названия для экрана ЧАТ -->
+    <!-- Названия для кнопок Фотогалереи -->
+    <string name="next_image">Вперед</string>
+    <string name="previous_image">Назад</string>photo_image
+    <string name="photo_image">НАШИ РАБОТЫ</string>
 
-    <string name="in_developing">В РАЗРАБОТКЕ</string>
+    <!-- Названия для экрана ЧАТ -->
+    <string name="in_developing">В РАЗРАБОТКЕ</string>next_image
 
 </resources>
