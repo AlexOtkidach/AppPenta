@@ -10,6 +10,9 @@
     <string name="previous_image">Назад</string>photo_image
     <string name="photo_image">НАШИ РАБОТЫ</string>
 
+    <!-- Для экрана аунтификации -->
+    <string name="logo">Logo Description</string>
+
     <!-- Названия для экрана ЧАТ -->
     <string name="in_developing">В РАЗРАБОТКЕ</string>next_image
 

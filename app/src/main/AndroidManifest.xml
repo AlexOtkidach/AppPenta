@@ -19,13 +19,20 @@
         android:theme="@style/Theme.Penta"
         tools:targetApi="31">
 
+        <!-- Экран входа -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- Основной экран -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
 
         <activity
@@ -63,6 +70,7 @@
             android:exported="true"
             android:parentActivityName=".MainActivity">
         </activity>
+
         <activity
             android:name=".PhotoGalleryActivity"
             android:exported="true"
@@ -92,7 +100,6 @@
             android:exported="true"
             android:parentActivityName=".MainActivity">
         </activity>
-
 
     </application>
 

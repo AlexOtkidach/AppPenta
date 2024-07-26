@@ -12,13 +12,13 @@ class PhotoGalleryActivity : AppCompatActivity() {
     private lateinit var btnNext: ImageButton
 
     private val imageResources = arrayOf(
-        R.drawable.kate_shine_systems,
+        R.drawable.ppf3,
         R.drawable.moto_gt,
-        R.drawable.ppf1,
-        R.drawable.alina_workshop,
+        R.drawable.ppf4,
         R.drawable.ppf2,
-        R.drawable.nasiol_work,
-        R.drawable.audi_nikdetail
+        R.drawable.ppf7,
+        R.drawable.ppf9,
+        R.drawable.ppf10,
     )
 
     private var currentIndex = 0

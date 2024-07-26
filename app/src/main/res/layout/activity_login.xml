@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/line_background">
+
+    <!-- Логотип вверху экрана -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/new_penta_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/logo" />
+
+    <!-- Контейнер для поля ввода номера телефона и кнопки -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!-- Поле ввода номера телефона -->
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Ваш номер 9998887766"
+            android:textSize="14dp"
+            android:inputType="phone"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background" />
+
+        <!-- Кнопка для входа -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPhone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:text="Войти"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <!-- Кнопка для входа как гость -->
+    <Button
+        android:id="@+id/buttonGuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти как гость"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
